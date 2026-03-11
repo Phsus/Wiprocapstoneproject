@@ -49,3 +49,43 @@ graph TD
     I -->|Pass / Fail| J[conftest.py: Teardown & Screenshots]
     J --> K[Clear Session Storage & Close Browser]
     K --> L[Generate pytest-html Report]
+
+
+
+📁 Project Structure
+Plaintext
+WiproCapstoneProject/
+├── Pages/                  # Page Object classes (Base, Home, Login, Checkout)
+├── Tests/
+│   └── TestcasesPytest/    # Pytest execution scripts & conftest.py
+├── utilities/              # Helper modules (Logger, Excel Reader)
+├── testdata/               # External test data (testdata.xlsx)
+├── reports/                # Auto-generated HTML execution reports
+├── screenshots/            # Auto-captured failure evidence
+├── pytest.ini              # Pytest configuration file
+├── requirements.txt        # Project dependencies
+└── README.md               # Project documentation
+🏃 How to Run the Tests
+1. Clone the repository and navigate to the directory:
+
+Bash
+git clone [https://github.com/Phsus/Wiprocapstoneproject.git](https://github.com/Phsus/Wiprocapstoneproject.git)
+cd Wiprocapstoneproject
+2. Install the required dependencies:
+
+Bash
+pip install -r requirements.txt
+3. Generate the external test data file:
+
+Bash
+python setup_testdata.py
+4. Execute the test suite:
+
+To run normally and generate the HTML report:
+
+Bash
+pytest -s
+To run in parallel (using 3 worker nodes) for faster execution:
+
+Bash
+pytest -n 3 -s
