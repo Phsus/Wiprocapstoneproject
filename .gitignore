@@ -1,0 +1,14 @@
+# Python Virtual Environment
+.venv/
+venv/
+env/
+
+# Cache and temporary files
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Project generated files (Logs, Reports, Screenshots)
+logs/
+reports/
+screenshots/
