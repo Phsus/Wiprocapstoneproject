@@ -8,7 +8,7 @@ This repository contains a fully automated, scalable End-to-End (E2E) testing fr
 
 ## 📊 Project Presentation
 A full breakdown of the architecture, challenges solved, and test strategies can be found in the project presentation.  
-📄 **[View the Capstone Presentation here](./Web-Automation-using-Selenium-with-Python.pdf")** 
+📄 **[View the Capstone Presentation here](./Web-Automation-using-Selenium-with-Python.pdf)** 
 
 ---
 
